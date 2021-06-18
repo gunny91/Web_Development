@@ -2,8 +2,9 @@
   body {
     font-family: Arial, sans-serif;
   }
-  header {
-    display:flex;
+  header, footer {
+    display: flex;
+    flex-direction: row;
   }
   header .profile-thumbnail {
     width: 50px;
@@ -11,11 +12,13 @@
     border-radius: 4px;
   }
   header .profile-name {
- display:flex;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
     margin-left: 10px;
   }
   header .follow-btn {
- display:flex;
+    display: flex;
     margin: 0 0 0 auto;
   }
   header .follow-btn button {
@@ -24,7 +27,7 @@
     padding: 5px;
   }
   header h3, header h4 {
-    display:flex;
+    display: flex;
     margin: 0;
   }
   #inner p {
@@ -36,11 +39,8 @@
     border-style: solid;
     opacity: 0.1;
   }
-  footer {
-      display:flex;
-  }
   footer .stats {
- display:flex;
+    display: flex;
     font-size: 15px;
   }
   footer .stats strong {
@@ -60,8 +60,8 @@
 <header>
   <img src="https://freecodecamp.s3.amazonaws.com/quincy-twitter-photo.jpg" alt="Quincy Larson's profile picture" class="profile-thumbnail">
   <div class="profile-name">
-    <h3>Gunny Cho</h3>
-    <h4>@gunny_910303</h4>
+    <h3>Quincy Larson</h3>
+    <h4>@ossia</h4>
   </div>
   <div class="follow-btn">
     <button>Follow</button>
@@ -69,7 +69,7 @@
 </header>
 <div id="inner">
   <p>I meet so many people who are in search of that one trick that will help them work smart. Even if you work smart, you still have to work hard.</p>
-  <span class="date">1:32 PM - 18 Jun 2021</span>
+  <span class="date">1:32 PM - 12 Jan 2018</span>
   <hr>
 </div>
 <footer>
